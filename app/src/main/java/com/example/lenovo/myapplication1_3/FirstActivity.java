@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class FirstActivity extends AppCompatActivity {
@@ -15,5 +16,7 @@ public class FirstActivity extends AppCompatActivity {
         Intent intent=getIntent();
         String data=intent.getStringExtra("extra_data");
         Toast.makeText(this,data.toString(),Toast.LENGTH_SHORT).show();
+
+        Button button5=(Button)findViewById(R.id.button5);
     }
 }
